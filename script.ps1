@@ -1,6 +1,6 @@
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor [System.Net.SecurityProtocolType]::Tls12
 
-$DownloadURL = 'https://raw.githubusercontent.com/lstprjct/IDM-Activation-Script/main/IAS_0.7_ModByPiash.cmd'
+$DownloadURL = 'https://raw.githubusercontent.com/MARKMUSYIMI/idmactivation/main/script.cmd'
 
 $FilePath = "$env:TEMP\IAS.cmd"
 
