@@ -181,11 +181,11 @@ set _status=Status_Unclear
 set _col=%_Yellow%
 )
 
-call :_color2 %_White% "        " %_Green% "  Create By Piash"
+call :_color2 %_White% "        " %_Green% "  Create By Mark and Alex"
 echo:          _____________________________________________   
 echo: 
-echo:          Telegram: @ModByPiash
-echo:          Github: https://github.com/lstprjct
+echo:          Telegram: @MaxxWinter
+echo:          Github: https://github.com/MARKMUSYIMI
 echo:          _____________________________________________   
 echo:                                                          
 echo:          [1] Activate IDM                                
@@ -194,19 +194,15 @@ echo:          _____________________________________________
 echo:                                                          
 call :_color2 %_White% "          [3] Toggle Windows Firewall  " %_col% "[%_status%]"
 echo:          _____________________________________________   
-echo:                                                          
-echo:          [4] ReadMe                                      
-echo:          [5] Homepage                                    
-echo:          [6] Exit                                        
+echo:                                                                                                                                 
+echo:          [4] Exit                                        
 echo:       ___________________________________________________
 echo:   
-call :_color2 %_White% "        " %_Green% "Enter a menu option in the Keyboard [1,2,3,4,5,6]"
-choice /C:123456 /N
+call :_color2 %_White% "        " %_Green% "Enter a menu option in the Keyboard [1,2,3,4]"
+choice /C:1234 /N
 set _erl=%errorlevel%
 
-if %_erl%==6 exit /b
-if %_erl%==5 goto homepage
-if %_erl%==4 call :readme&goto MainMenu
+if %_erl%==4 exit /b
 if %_erl%==3 call :_tog_Firewall&goto MainMenu
 if %_erl%==2 goto _reset
 if %_erl%==1 goto _activate
